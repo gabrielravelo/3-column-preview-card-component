@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+  /* ### primary ###  */
+  --BrightOrange: hsl(31, 77%, 52%);
+  --DarkCyan: hsl(184, 100%, 22%);
+  --VeryDarkCyan: hsl(179, 100%, 13%);
+  /* ### neutral ###  */
+  --p: hsla(0, 0%, 100%, 0.75);
+  --Bg-Heading-Buttons: hsl(0, 0%, 95%);
+  /* ### fonts ###  */
+  --fonTxt: 'Lexend Deca', sans-serif;
+  --fontHeading: 'Big Shoulders Display', cursive;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Bg-Heading-Buttons);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  font-size: 15px;
+  color: var(--p);
+  font-family: var(--fonTxt);
+  line-height: 1.6;
+}
+h1 {
+  color: var(--Bg-Heading-Buttons);
+  text-transform: uppercase;
+  font-family: var(--fontHeading);
+}
+button {
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  background-color: var(--Bg-Heading-Buttons);
+  font-family: var(--fonTxt);
+}
+button:hover {
+  cursor: pointer;
+  border: 2px solid var(--Bg-Heading-Buttons);
+  color: var(--Bg-Heading-Buttons);
+}
+.container {
+  margin: 2rem;
+}
+.card {
+  padding: 3rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 300px;
+}
+.card1 {
+  background-color: var(--BrightOrange);
+}
+.card2 {
+  background-color: var(--DarkCyan);
+}
+.card3 {
+  background-color: var(--VeryDarkCyan);
+}
+.btn1 {
+  color: var(--BrightOrange);
+}
+.btn1:hover {
+  background-color: var(--BrightOrange);
+}
+.btn2 {
+  color: var(--DarkCyan);
+}
+.btn2:hover {
+  background-color: var(--DarkCyan);
+}
+.btn3 {
+  color: var(--VeryDarkCyan);
+}
+.btn3:hover {
+  background-color: var(--VeryDarkCyan);
+}
+.attribution { 
+  font-size: 15px; 
+  text-align: center; 
+  font-family: var(--fonTxt);
+}
+.attribution a { 
+  color: var(--DarkCyan);
+}
+.attribution a:hover {
+  color: var(--VeryDarkCyan);
+  text-decoration: none;
+}
+@media (min-width: 500px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+  }
+  p {
+    margin-right: 2rem;
+  }
+}
